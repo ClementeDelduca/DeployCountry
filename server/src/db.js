@@ -3,13 +3,10 @@ const { Sequelize } = require("sequelize");
 
 const fs = require('fs');
 const path = require('path');
-const {
-  DB_USER, DB_PASSWORD, DB_HOST, DB_URL,
-} = process.env;
 
-const sequelize = new Sequelize(`${DB_URL}`, {
-  logging: false, 
-  native: false, 
+const sequelize = new Sequelize('postgres://myuser:NhJIs0DkJm7dCcCDTTY3gscr9qEXDLLV@dpg-cllptfcjtl8s73epo60g-a.oregon-postgres.render.com/countries_iiga?ssl=true', {
+  logging: false,
+  native: false,
 });
 const basename = path.basename(__filename);
 

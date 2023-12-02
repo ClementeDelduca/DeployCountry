@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 50px 10px;
+    
+}
+.footer-icon-github{
+    width: auto;
+    height: 2.5rem;  
+    padding: 1rem;
+}
+.footer-icon-linkedin{
+    width: auto;
+    height: 2.8rem;  
+    padding: 1rem;
+}
